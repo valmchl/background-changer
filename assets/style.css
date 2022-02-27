@@ -12,9 +12,9 @@
     font-family: var(--secondary-font);
 }
 
-/*body {
-    background-color: gray;
-}*/
+body {
+    background-color: #e3e3e3;
+}
 nav {
     display: block;
 }
@@ -63,7 +63,7 @@ button {
     }
 
 #custom__url {
-    clear: left;
+    /*clear: left;*/
     padding-top: 10px;
     text-align: center;
 }
@@ -77,8 +77,12 @@ button {
     width: 780px;
     color: #fff;
 }
+ /********** THUMBNAIL IMAGES ***********/
 
-#bg1 {
+/*#bg0 {
+    background: #5e2d79;
+}*/
+ #bg1 {
     background-image: url(https://images.unsplash.com/photo-1605106702734-205df224ecce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3000&q=80) !important;
 }
 #bg2 {
@@ -93,7 +97,27 @@ button {
 #bg5 {
     background-image: url(https://images.unsplash.com/photo-1557411732-1797a9171fcf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80) !important;
 }
+/***********************/
 
+body .bg1, .bg1 {
+    background-image: url(https://images.unsplash.com/photo-1605106702734-205df224ecce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3000&q=80);
+}
+
+body .bg2, .bg2 {
+    background-image: url(https://images.unsplash.com/photo-1553532434-5ab5b6b84993?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80);
+}
+
+body .bg3, .bg3 {
+    background-image: url(https://images.unsplash.com/photo-1558244661-d248897f7bc4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80);
+}
+
+body .bg4, .bg4 {
+    background-image: url(https://images.unsplash.com/photo-1487552292919-eccbbd948cba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80);
+}
+
+body .bg5, .bg5 {
+    background-image: url(https://images.unsplash.com/photo-1557411732-1797a9171fcf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80);
+}
 
 .page__width {
     background-color:rgb(18, 18, 18);
