@@ -12,13 +12,12 @@
 
     <title>Background Changer</title>
 </head>
-<body id="bg_custom">
-    <div id="content" class="forum_list">
+<body id="bg__custom">
+    <div class="content">
         <div class="page__width">
             <div class="navigation__start">
                 <nav>
-
-                    <!-- ******* MENU ICONS ****** -->
+                    <!-- *** MENU ICONS *** -->
                     <div class="nav__icons">
                         <div class="home__icon">
                             <a class="menu__icon" href="#">
@@ -34,11 +33,12 @@
                             </a>
                         </div>
                     </div>
-                    <!-- ******* END MENU ICONS ****** -->
+                    <!-- *** END MENU ICONS *** -->
                 </nav>
             </div>
-            <!-- style="display: none;" -->
-            <div style="display: none;" id="toggle_background">
+
+            <!-- ***DEFAULT BACKGROUND SELECTION*** -->
+            <div style="display: none;" id="toggle__background">
                 <div id="custom__background">
                     <span id="bg0" title="Clear"></span>
                     <!--<span id="bg1"></span>-->
@@ -48,13 +48,21 @@
                     <span id="bg4" title="#4"></span>
                     <span id="bg5" title="#5"></span>
                     <div id="custom__url">
-                        <input id="custom__input" placeholder="OR enter the URL to your background image and press Change" type="text">
+                        <input id="custom__input" placeholder="OR enter the URL to your background image and press Change" type="text" autocomplete="false" autofill="off">
                         <button id="custom__submit">Change</button>
                     </div>
                 </div>
             </div>
+            <!-- ***END DEFAULT BACKGROUND SELECTION*** -->
         </div>
+
+    <!-- END BREADCRUMB -->
     </div>
+        <div class="container">
+            <div class="text__box">
+                <p>Click on the&nbsp;<i class="fa-solid fa-image"></i>&nbsp;icon</p>
+            </div>
+        </div>
     <script src="assets/app.js"></script>
 </body>
 </html>
