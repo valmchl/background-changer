@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Montserrat:wght@100;200;300;400;600&display=swap");
+@import "https://unpkg.com/transition-style";
 
 :root {
   --primary-font: "Lato", sans-serif;
@@ -18,6 +19,8 @@ body {
 body#bg__custom {
   background-attachment: fixed;
   background-repeat: repeat;
+  background-size: 30%;
+  overflow: hidden;
 }
 
 nav {
@@ -25,7 +28,6 @@ nav {
 }
 
 button {
-  padding: 10px;
   cursor: pointer;
   font-weight: normal;
   border: none;
@@ -34,14 +36,19 @@ button {
 
 #custom__submit {
   color: #fff;
-  background: #5e2d79;
+  background: #a6c0e0;
   text-shadow: #4c5057 0px -1px 0px;
   margin: 0 0 0 5px;
+  position: absolute;
+  top: 24px;
+  right: 620px;
+  border-radius: 100%;
+  width: 32px;
+  height: 32px;
 }
 
 #custom__background {
   color: #fff;
-  background-color: #111;
   position: relative;
   padding: 15px;
   margin-bottom: 15px;
@@ -51,11 +58,13 @@ button {
 
 #custom__background span {
   display: inline-block;
-  width: 145px;
-  height: 90px;
+  width: 190px;
+  height: 120px;
   margin-right: 15px;
   background: #e6e5e7 no-repeat 50% 50%;
   transition: all 0.2s ease-in-out;
+  border-radius: 6px;
+  border: 0.6px solid #e7e7e7;
   cursor: pointer;
 }
 
@@ -63,12 +72,15 @@ button {
   /*clear: left;*/
   padding-top: 10px;
   text-align: center;
+  position: relative;
 }
 
 #custom__input {
-  background: #000;
+  background: #fff;
   border: 0;
+  border-radius: 5px;
   padding: 0 10px;
+  margin: 10px 20px;
   font-size: 15px;
   height: 40px;
   width: 780px;
@@ -81,19 +93,29 @@ button {
   background: none;
 }
 #bg1 {
-  background-image: url(https://images.unsplash.com/photo-1605106702734-205df224ecce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3000&q=80) !important;
+  background-image: url(../assets/img/asset-1.png) !important;
+  background-repeat: repeat !important;
+  background-size: 80% !important;
 }
 #bg2 {
-  background-image: url(https://images.unsplash.com/photo-1553532434-5ab5b6b84993?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80) !important;
+  background-image: url(../assets/img/asset-2.jpg) !important;
+  background-repeat: repeat !important;
+  background-size: 80% !important;
 }
 #bg3 {
-  background-image: url(https://images.unsplash.com/photo-1558244661-d248897f7bc4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80) !important;
+  background-image: url(../assets/img/asset-3.jpg) !important;
+  background-repeat: repeat !important;
+  background-size: 80% !important;
 }
 #bg4 {
-  background-image: url(https://images.unsplash.com/photo-1572756317709-fe9c15ced298?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2667&q=80) !important;
+  background-image: url(../assets/img/asset-4.jpg) !important;
+  background-repeat: repeat !important;
+  background-size: 80% !important;
 }
 #bg5 {
-  background-image: url(https://images.unsplash.com/photo-1557411732-1797a9171fcf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80) !important;
+  background-image: url(../assets/img/asset-5.jpg) !important;
+  background-repeat: repeat !important;
+  background-size: 80% !important;
 }
 /***********************/
 
@@ -104,32 +126,49 @@ body .bg0,
 
 body .bg1,
 .bg1 {
-  background-image: url(https://images.unsplash.com/photo-1605106702734-205df224ecce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3000&q=80);
+  background-image: url(../assets/img/asset-1.png);
+  /* @keyframes circle-in-hesitate {
+  0% {
+    clip-path: circle(0%);
+  }
+  40% {
+    clip-path: circle(40%);
+  }
+  100% {
+    clip-path: circle(125%);
+  }
+}
+
+[transition-style="in:circle:hesitate"] {
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-hesitate both;
+} */
 }
 
 body .bg2,
 .bg2 {
-  background-image: url(https://images.unsplash.com/photo-1553532434-5ab5b6b84993?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80);
+  background-image: url(../assets/img/asset-2.jpg);
 }
 
 body .bg3,
 .bg3 {
-  background-image: url(https://images.unsplash.com/photo-1558244661-d248897f7bc4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80);
+  background-image: url(../assets/img/asset-3.jpg);
 }
 
 body .bg4,
 .bg4 {
-  background-image: url(https://images.unsplash.com/photo-1572756317709-fe9c15ced298?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2667&q=80);
+  background-image: url(../assets/img/asset-4.jpg);
 }
 
 body .bg5,
 .bg5 {
-  background-image: url(https://images.unsplash.com/photo-1557411732-1797a9171fcf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80);
+  background-image: url(../assets/img/asset-5.jpg);
 }
 /********** END THUMBNAIL IMAGES ***********/
 
 .page__width {
-  background-color: rgb(18, 18, 18);
+  background: rgba(231, 231, 231, 0.70);
+  border-bottom: 0.4px solid #8C8C8C;
+  backdrop-filter: blur(9px);
   padding: 0;
   overflow: hidden;
   zoom: 1;
@@ -149,7 +188,7 @@ body .bg5,
 .nav__icons {
   height: 60px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: row;
   align-items: center;
   overflow: hidden;
@@ -160,7 +199,7 @@ body .bg5,
 
 .menu__icon {
   font-size: 12px;
-  color: rgb(171, 184, 190);
+  color: rgb(84, 169, 209);
   background-color: transparent;
   display: inline-block;
 }
@@ -168,6 +207,17 @@ body .bg5,
 i:hover {
   color: #fff;
   transition: all 0.3s ease-in-out;
+}
+
+.fa-chevron-down {
+  font-size: 30px;
+  transform: translateY(-10%);
+  animation: float 1.5s infinite;
+}
+
+@keyframes float {
+  0%{transform: translateY(-10%);transition: ease 0.5s;}
+  50%{transform: translateY(10%);transition: ease 0.5s;}
 }
 
 .container {
