@@ -247,3 +247,10 @@ i:hover {
   display: flex;
   align-items: center;
 }
+
+@media (max-width: 524px) {
+  #custom__submit {
+    width: 64px;
+    height: 64px;
+  }
+}
