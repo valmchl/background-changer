@@ -6,4 +6,4 @@ It was my first experience with jQuery and I've decided to recreate it so long a
 
 [**View Here**](https://vgmichel.github.io/background-changer/index.html)
 
-![](https://vgmichel.github.io/background-changer/index.html)
+![](https://github.com/VGMichel/background-changer/blob/main/backgroundchanger_preview.png)
