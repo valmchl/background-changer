@@ -1,9 +1,12 @@
-# Background Changer
-Dynamic Custom Background Changer (including img links)
+# Dynamic Custom Background Changer
+An old user favorite feature from an old forum I volunteered at as a Front End Developer.
+It was my first experience with jQuery years ago and I've recreated it.
 
-An old user favorite feature from an old forum I used to be a Front End Developer at in the years prior.
-It was my first experience with jQuery and I've decided to recreate it so long after the forum has shut down.
+## Features
++ 6 pre-installed images; 5 stylish seamless patterned backgrounds, 1 neutral/reset color
++ Input field for inserting image source links of any image you choose (image will be tiled, repeated pattern)
 
+## Demo
 [**View Here**](https://vgmichel.github.io/background-changer/index.html)
 
 ![](https://github.com/VGMichel/background-changer/blob/main/backgroundchanger_preview.png)
